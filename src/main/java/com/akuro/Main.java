@@ -1,4 +1,6 @@
-import dice.Dice;
+package com.akuro;
+
+import com.akuro.dice.Dice;
 
 import java.util.Scanner;
 
@@ -6,13 +8,7 @@ import java.util.Scanner;
 
 public class Main {
 
-
-
     public static void main(String[] args) {
-
-
-
-
 
         Scanner scanner = new Scanner(System.in);
         int diceNumber = 16;
@@ -38,8 +34,6 @@ public class Main {
                         diceEyes = new Scanner(System.in).nextInt();
                         minimum = diceNumber*diceEyes*0.60;
                         System.out.println("Minimum is: " + minimum);
-
-
                         break;
                 case "2":
                     System.out.println("What minium do you want?:");
@@ -55,13 +49,7 @@ public class Main {
                     break;
                 }
 
-        } else
-        {}
-
-
-
-
-
+        }
 
         new Dice().roll(diceNumber, diceEyes, minimum, sum2DiceTogheter);
 
